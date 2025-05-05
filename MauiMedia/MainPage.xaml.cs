@@ -8,7 +8,7 @@
         {
             InitializeComponent();
         }
-
+        //hej smukke
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
