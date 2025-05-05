@@ -13,6 +13,14 @@
                 HeightRequest="185"
                 SemanticProperties.Description="dot net bot in a race car number eight"
                 Source="dotnet_bot.png" />
+            
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Play" Clicked="OnPlayClicked" />
+                <Button Text="Pause" Clicked="OnPauseClicked" />
+                <Button Text="Stop" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Slider x:Name="volumeSlider" Minimum="0" Maximum="1" Value="0.5" ValueChanged="OnVolumeChanged" />
 
             <Label
                 SemanticProperties.HeadingLevel="Level1"

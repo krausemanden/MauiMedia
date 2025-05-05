@@ -8,7 +8,6 @@
         {
             InitializeComponent();
         }
-        //hej smukke
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
@@ -20,6 +19,26 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+        private void OnPlayClicked(object sender, EventArgs e)
+        {
+            mediaElement.Play();
+        }
+
+        private void OnPauseClicked(object sender, EventArgs e)
+        {
+            mediaElement.Pause();
+        }
+
+        private void OnStopClicked(object sender, EventArgs e)
+        {
+            mediaElement.Stop();
+        }
+
+        private void OnVolumeChanged(object sender, ValueChangedEventArgs e)
+        {
+            mediaElement.Volume = e.NewValue;
+        }
+
     }
 
 }
