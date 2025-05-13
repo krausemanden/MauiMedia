@@ -39,6 +39,7 @@
             mediaElement.Volume = e.NewValue;
         }
 
+
     }
 
 }
